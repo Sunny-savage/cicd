@@ -1,0 +1,23 @@
+name: Delpoy to ec2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Push to EC2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 16.171.36.185
+          username: ubuntu
+          password: ${{ secrets.EC2_SSH_KEY }}
+          port: 22
+          script: whoami  
