@@ -21,4 +21,10 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: | 
+           cd next_test
+           git pull origin main
+           npm i
            ls
+
+
+
