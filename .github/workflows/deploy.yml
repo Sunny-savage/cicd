@@ -26,15 +26,16 @@ jobs:
 
 
 
-
+            git pull
 
             source ~/.nvm/nvm.sh
+            pm2 start npm --name "nextjs-app" -- run dev
 
 
           
 
 
-            npm -v
+            
 
 
-            npm install
+            
