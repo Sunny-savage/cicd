@@ -23,9 +23,11 @@ jobs:
           script: | 
            cd next_test
           
-           git clone git@github.com:Sunny-savage/cicd.git
+           git pull origin main
+           npm i
+           npm run dev
           
-           ls
+           
 
 
 
