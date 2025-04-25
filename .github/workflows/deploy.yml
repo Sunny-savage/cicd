@@ -27,8 +27,8 @@ jobs:
            
 
 
-            git pull 
-            npm i
-            npm run dev
-            
+            # git pull 
+            nvm ls
+
+
             
