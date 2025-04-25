@@ -27,8 +27,21 @@ jobs:
            
 
 
-            # git pull 
-            nvm ls
+            # Load nvm for the current session (this is needed to use nvm in the CI environment)
+            source ~/.nvm/nvm.sh
+  
+            # Use a specific Node version with nvm (make sure it's installed in EC2)
+            nvm use 16
+  
+            # Verify npm is available
+            npm -v
+
+            # Install dependencies
+            npm install
+  
+             # Run the app
+            npm run dev
+            
 
 
             
