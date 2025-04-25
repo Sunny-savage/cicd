@@ -24,11 +24,13 @@ jobs:
             cd next_test
             cd cicd
 
-
+            pm2 stop nextjs-app
+            
 
             git pull
 
             source ~/.nvm/nvm.sh
+            npm i
             pm2 start npm --name "nextjs-app" -- run dev
 
 
