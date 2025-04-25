@@ -23,7 +23,7 @@ jobs:
           script: | 
            cd next_test
            git clone git@github.com:Sunny-savage/cicd.git
-           cd cicd
+           
            ls
 
 
