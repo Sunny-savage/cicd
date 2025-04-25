@@ -23,8 +23,8 @@ jobs:
           script: | 
            cd next_test
           
-           ssh-keyscan github.com >> ~/.ssh/known_hosts
-           git clone git@github.com:your-username/your-repo.git
+           git clone git@github.com:Sunny-savage/cicd.git
+          
            ls
 
 
