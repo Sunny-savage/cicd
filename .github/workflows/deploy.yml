@@ -28,10 +28,10 @@ jobs:
 
 
 
-            git pull 
+            source ~/.nvm/nvm.sh
 
 
-           
+          
 
 
             npm -v
